@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Smart Shopping App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+
+</head>
+<body>
+  <h1 id="mainHeading" class="page-header text-center" >Smart Shopping</h1>
+  <hr>
+  <div class="row">
+
+    <div class="col-md-3">
+      <a href="#/home" class="btn btn-danger btn-lg">Home </a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="#/aldi" class="btn btn-success btn-xs">Aldi<img ng-src="images/cart.png" alt="Shopping Cart"> </a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="#/coles" class="btn btn-info btn-xs">Coles<img ng-src="images/cart.png" alt="Shopping Cart"> </a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="#/woolworth" class="btn btn-warning btn-xs">Woolworth<img ng-src="images/cart.png" alt="Shopping Cart"> </a>
+    </div>
+
+  </div>
+</br></br>
+
+  <div ng-view></div>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="aldi/aldi.js"></script>
+  <script src="coles/coles.js"></script>
+  <script src="woolworth/woolworth.js"></script>
+  <script src="home/home.js"></script>
+  <!-- <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script> -->
+</body>
+</html>
